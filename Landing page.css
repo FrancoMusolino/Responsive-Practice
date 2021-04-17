@@ -151,7 +151,6 @@ footer .nav{
 
 /*MEDIA QUERIES*/
 
-/*
 @media screen and (max-width: 1305px){
     .header{
         width: 100vw;
@@ -197,4 +196,4 @@ footer .nav{
     .title{
         margin-bottom: 10px;
     }
-} */
+}
