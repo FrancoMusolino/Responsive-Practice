@@ -1,0 +1,200 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --header-color: #e7c533;
+}
+
+/*HEADER*/
+
+.nav{
+    width: 100%;
+    height: 8vh;
+    background: var(--header-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.nav a{
+    width: 15%;
+    padding: 27px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color .6s ease-out, background-color .6s ease-out;
+}
+
+.nav a:hover{
+    color: #fff;
+    background-color: #1d2f3d;
+}
+
+
+.img-container img{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    animation: img 2s linear;
+}
+
+@keyframes img{
+    0%{
+        filter: brightness(1.5);
+    }
+
+    50%{
+        filter: brightness(1.25);
+    }
+
+    100%{
+        filter: brightness(1);
+    }
+}
+
+/*MAIN*/
+
+main{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.main-container{
+    width: 65%;
+    display: flex;
+    margin: auto;
+}
+
+.aside-card{
+    width: 30%;
+    min-width: 288px;
+    height: 100%;
+    padding: 20px;
+    margin: 30px 40px 10px 0;
+    background-color: #1d2f3d;
+    border-radius: 4px;
+    position: sticky;
+    top: 20px;
+    flex-shrink: 1;
+}
+
+.aside-card h3{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Trebuchet MS';
+}
+
+.a-container{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.a-container a{
+    text-decoration: none;
+    display: inline-block;
+    color: #ee0;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: color .5s linear;
+}
+
+.a-container a:hover{
+    color: #fff;
+}
+
+.cards{
+    height: 100vh;
+    width: 70%;
+}
+
+.article-container{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.title h2{
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.article-container p{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+
+/*FOOTER*/
+
+footer .nav{
+    position: sticky;
+    bottom: 0;
+}
+
+.footer .img-container{
+    transform: translateY(10px);
+}
+
+
+
+/*MEDIA QUERIES*/
+
+/*
+@media screen and (max-width: 1305px){
+    .header{
+        width: 100vw;
+    }
+
+    .nav{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .nav a{
+        width: auto;
+        flex: 1;
+    }
+
+    .img-container img{
+        height: 50vh;
+    }
+
+    .main-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .aside-card{
+        width: 60%;
+        margin: 20px auto;
+        position: static;
+    }
+
+    .cards{
+        width: 80%;
+        margin: 10px auto;
+        height: auto;
+    }
+
+    .article-container{
+        margin: 20px 0;
+    }
+
+    .title{
+        margin-bottom: 10px;
+    }
+} */
